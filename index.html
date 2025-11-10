@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Stayton Credit Solutions — Top-Tier Credit Repair (Texas-Owned)</title>
+  <meta name="description" content="Texas-owned, CRA/CROA-compliant credit audits, disputes, identity theft support, and score-building plans. Transparent pricing. No false promises." />
+  <link rel="canonical" href="https://your-github-username.github.io/StaytonCreditSolutions/" />
+  <style>
+    :root{
+      --bg:#0b132b;        /* navy */
+      --bg-2:#1c2541;
+      --acc:#3a86ff;       /* blue for buttons */
+      --gold:#d4af37;      /* accent */
+      --text:#f7f8fb;
+      --muted:#c9d1e0;
+      --card:#111827;
+      --ok:#10b981;
+      --warn:#f59e0b;
+      --danger:#ef4444;
+      --shadow: 0 10px 30px rgba(0,0,0,.35);
+      --radius: 16px;
+      --radius-sm: 12px;
+      --radius-lg: 22px;
+      --max: 1100px;
+    }
+    [data-theme="light"]{
+      --bg:#f8fafc;
+      --bg-2:#ffffff;
+      --text:#0f172a;
+      --muted:#475569;
+      --card:#ffffff;
+      --shadow: 0 8px 20px rgba(2,6,23,.08);
+    }
+    *{box-sizing:border-box}
+    html,body{margin:0;height:100%;scroll-behavior:smooth;background:var(--bg);color:var(--text);font-family:ui-sans-serif,system-ui,Segoe UI,Roboto,Arial,"Apple Color Emoji","Segoe UI Emoji"}
+    a{color:var(--acc);text-decoration:none}
+    a:hover{text-decoration:underline}
+    .container{max-width:var(--max);margin-inline:auto;padding:24px}
+    .pill{display:inline-block;padding:.5rem .9rem;border-radius:999px;background:rgba(58,134,255,.12);color:var(--acc);font-weight:600}
+    /* Header */
+    header{position:sticky;top:0;z-index:50;background:var(--bg-2);box-shadow:var(--shadow)}
+    .bar{display:flex;align-items:center;gap:16px;justify-content:space-between}
+    nav a{padding:10px 12px;border-radius:10px}
+    nav a:hover{background:rgba(58,134,255,.12)}
+    .logo{display:flex;align-items:center;gap:12px}
+    .brand{font-size:1.05rem;font-weight:800;letter-spacing:.3px}
+    /* Simple “1930s top-hat” SVG badge */
+    .badge{width:44px;height:44px;border-radius:50%;background:linear-gradient(140deg,#0b132b,#1c2541);display:grid;place-items:center;box-shadow:var(--shadow)}
+    [data-theme="light"] .badge{background:linear-gradient(140deg,#111827,#374151)}
+    .btn{display:inline-flex;align-items:center;gap:10px;padding:12px 16px;border-radius:14px;background:var(--acc);color:white;border:0;cursor:pointer;font-weight:700;box-shadow:var(--shadow)}
+    .btn:hover{filter:brightness(.95)}
+    .btn-outline{background:transparent;color:var(--acc);border:2px solid var(--acc)}
+    .grid{display:grid;gap:24px}
+    @media(min-width:900px){.grid-2{grid-template-columns:1.2fr .8fr}}
+    /* Cards */
+    .card{background:var(--card);border-radius:var(--radius);box-shadow:var(--shadow);padding:22px}
+    .card h3{margin-top:0}
+    /* Hero */
+    .hero{padding:32px 0}
+    .hero h1{font-size:clamp(28px,3.6vw,44px);margin:10px 0}
+    .muted{color:var(--muted)}
+    .taglist{display:flex;flex-wrap:wrap;gap:10px}
+    .tag{background:rgba(212,175,55,.15);color:var(--gold);border:1px solid rgba(212,175,55,.35);padding:6px 10px;border-radius:999px;font-weight:700}
+    /* Sections */
+    section{scroll-margin-top:100px}
+    h2{font-size:clamp(22px,2.6vw,30px)}
+    ul.clean{padding-left:18px}
+    .price{font-weight:900}
+    .fine{font-size:.92rem;line-height:1.35;color:var(--muted)}
+    .note{background:rgba(245,158,11,.12);border:1px dashed var(--warn);padding:12px;border-radius:12px}
+    /* Details dropdowns */
+    details{background:var(--bg-2);border-radius:14px;padding:14px 16px;border:1px solid rgba(148,163,184,.25)}
+    details+details{margin-top:14px}
+    summary{cursor:pointer;font-weight:800}
+    .actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:10px}
+    .action{padding:8px 12px;border-radius:10px;border:1px solid rgba(148,163,184,.35);background:transparent;color:var(--text);cursor:pointer}
+    .action:hover{background:rgba(148,163,184,.12)}
+    /* Lists */
+    .cols{columns:2;gap:28px}
+    @media(max-width:700px){.cols{columns:1}}
+    /* Footer + back to top */
+    footer{margin-top:40px;padding:18px 0;border-top:1px solid rgba(148,163,184,.25)}
+    .backtop{position:fixed;right:18px;bottom:18px;border-radius:999px;padding:12px 14px;background:var(--acc);color:#fff;border:0;cursor:pointer;box-shadow:var(--shadow)}
+    /* Forms */
+    .input{width:100%;padding:12px 14px;border-radius:12px;border:1px solid rgba(148,163,184,.35);background:var(--bg-2);color:var(--text)}
+    textarea.input{min-height:120px;resize:vertical}
+    .row{display:grid;gap:12px}
+    @media(min-width:720px){.row-2{grid-template-columns:1fr 1fr}}
+    /* Accessibility helpers */
+    .sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+  </style>
+</head>
+<body id="top">
+
+  <!-- Header -->
+  <header>
+    <div class="container bar">
+      <div class="logo">
+        <div class="badge" aria-hidden="true">
+          <!-- playful 1930s top-hat face -->
+          <svg width="28" height="28" viewBox="0 0 64 64" fill="none" aria-label="1930s three-piece suit logo">
+            <rect x="10" y="8" width="44" height="10" rx="2" fill="#0ea5e9"/>
+            <rect x="20" y="14" width="24" height="14" rx="2" fill="#111827"/>
+            <circle cx="32" cy="38" r="12" fill="#fde68a"/>
+            <path d="M26 36h4M34 36h4" stroke="#111827" stroke-width="2" stroke-linecap="round"/>
+            <path d="M26 42c4 4 8 4 12 0" stroke="#ef4444" stroke-width="2" stroke-linecap="round"/>
+          </svg>
+        </div>
+        <div>
+          <div class="brand">Stayton Credit Solutions</div>
+          <div class="muted" style="font-size:.9rem">A solution for every credit situation • Texas-Owned</div>
+        </div>
+      </div>
+
+      <nav>
+        <a href="#services">Services</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#letters">Letter Library</a>
+        <a href="#care">Customer Care</a>
+        <a href="#policies">Policies</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <div class="actions">
+        <button class="btn" id="downloadPage" aria-label="Download this page">⬇️ Download</button>
+        <button class="btn btn-outline" data-theme-toggle aria-label="Switch theme">🌗 Theme</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <div class="container hero grid grid-2">
+    <div class="card">
+      <span class="pill">CRA/CROA Compliant • No False Promises</span>
+      <h1>Top-Tier Credit Repair with Transparent, Texas-Strong Standards</h1>
+      <p class="muted">Full credit audits (Experian • TransUnion • Equifax), dispute management, identity theft support, and score-building plans. We’ll keep you informed every step—without promising results we can’t lawfully guarantee.</p>
+      <div class="taglist" style="margin-top:10px">
+        <span class="tag">Texas-Owned</span>
+        <span class="tag">Strict Guidelines</span>
+        <span class="tag">Audit &amp; Disputes</span>
+        <span class="tag">Identity Theft</span>
+      </div>
+      <div class="actions" style="margin-top:16px">
+        <a class="btn" href="tel:16828889241">📞 Call/Text 682-888-9241</a>
+        <a class="btn btn-outline" href="mailto:stateandcoryjoseph@gmail.com">✉️ Email Us</a>
+      </div>
+      <p class="fine" style="margin-top:8px">Primary email: <a href="mailto:stateandcoryjoseph@gmail.com">stateandcoryjoseph@gmail.com</a> • Alternate: <a href="mailto:stateemployee6@gmail.com">stateemployee6@gmail.com</a></p>
+    </div>
+
+    <div class="grid" style="align-content:start">
+      <div class="card">
+        <h3>Quick Facts</h3>
+        <ul class="clean">
+          <li>CRA/CROA compliant letters & timelines</li>
+          <li>No false promises about deletions or score changes</li>
+          <li>Transparent pricing; clear cancellation rights</li>
+          <li>Local appointments available</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>Download Welcome Kit</h3>
+        <p class="muted">Includes: portal access steps, letter library overview, progress tracking tips.</p>
+        <button class="btn" id="downloadWelcome">⬇️ Download Welcome Kit (PDF)</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Services -->
+  <section id="services" class="container">
+    <h2>What We Do</h2>
+    <div class="grid grid-2">
+      <div class="card">
+        <h3>Audits & Disputes</h3>
+        <ul class="clean">
+          <li>Full credit audit of all <strong>3 bureaus</strong>: Experian, TransUnion, Equifax</li>
+          <li>Track errors: mixed files, obsolete items, duplicate entries</li>
+          <li>Prepare and send CRA/CROA-compliant dispute letters</li>
+          <li>Keep you up-to-date with organized case notes</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>Identity Theft & Fraud</h3>
+        <ul class="clean">
+          <li>Identity Theft Report & Affidavit preparation</li>
+          <li>Fraud alerts and bureau notifications</li>
+          <li>Verification & validation requests to collectors</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>Score Building (No Gimmicks)</h3>
+        <ul class="clean">
+          <li>Utilization & balance-to-limit optimization plans</li>
+          <li>Late payment guidance & creditor escalation steps</li>
+          <li>New tradeline education</li>
+          <li>Budget coaching + bill-pay calculator</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>Popular Goals</h3>
+        <div class="cols">
+          <ul class="clean">
+            <li>Qualify for apartment or home</li>
+            <li>Refinance vehicle</li>
+            <li>Lower insurance</li>
+          </ul>
+          <ul class="clean">
+            <li>Reduce credit stress</li>
+            <li>Credit limit increase</li>
+            <li>Rebuild after life events</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pricing -->
+  <section id="pricing" class="container">
+    <h2>Clear Pricing (No Surprises)</h2>
+    <div class="grid grid-2">
+      <div class="card">
+        <h3>Core Packages</h3>
+        <ul class="clean">
+          <li><span class="price">$159</span> — Full Credit Audit (all 3 bureaus) + setup</li>
+          <li><span class="price">$30</span> per item — Dispute errors (mixed files, duplicates, obsolete)</li>
+          <li><span class="price">$65</span> add-on — Identity Theft / Fraud Affidavit package</li>
+          <li><span class="price">$50</span> — Goodwill & Pay-for-Delete strategy (when appropriate)</li>
+          <li><span class="price">$20.99</span> each — Credit inquiry challenges (first 10 inquiries FREE)</li>
+          <li><span class="price">$399</span> — <strong>Ultimate Package</strong> (everything + downloadable templates)</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>Score-Building À La Carte</h3>
+        <ul class="clean">
+          <li><span class="price">$39.99</span> — Utilization & Balance-to-Limit Optimization Plan</li>
+          <li><span class="price">$18.99</span> — Late Payment Guidance & Creditor Escalation</li>
+          <li><span class="price">$40.99</span> — New Tradeline Education (no gimmicks)</li>
+          <li><span class="price">$15.99</span> — Budget Coaching + Bill-Pay Calculator</li>
+          <li><span class="price">$125.99</span> — Personalized 90-Day Action Roadmap</li>
+          <li><span class="price">$69.99</span> — Mini Course: How Credit Works</li>
+        </ul>
+      </div>
+    </div>
+    <p class="fine">All work adheres to CRA/CROA requirements. We cannot guarantee deletions or score outcomes. Timelines vary by bureau and creditor responsiveness.</p>
+  </section>
+
+  <!-- Letter Library (Printable dropdowns) -->
+  <section id="letters" class="container">
+    <h2>CRA/CROA-Compliant Letter Library</h2>
+    <p class="muted">Open a letter, edit your details, then click <em>Print</em> to send to your printing app.</p>
+
+    <details>
+      <summary>Dispute Letter — Inaccurate/Obsolete Item (Sample)</summary>
+      <div class="card">
+        <textarea class="input" id="letter-dispute">
+[Your Name]
+[Address]
+[City, State ZIP]
+[Email] | [Phone]
+[Date]
+
+Experian / TransUnion / Equifax
+Re: Dispute of inaccurate/obsolete information under the FCRA
+
+To whom it may concern,
+I am disputing the accuracy/completeness of the following item(s) on my credit report:
+• Creditor/Collector:
+• Account #:
+• Reason:
+
+Under the FCRA and applicable state law, please investigate and delete or correct the item(s) if you cannot verify with maximum possible accuracy. Please provide written results of your reinvestigation and an updated report.
+
+Sincerely,
+[Your Name]
+        </textarea>
+        <div class="actions">
+          <button class="action" onclick="printArea('letter-dispute')">🖨️ Print</button>
+        </div>
+      </div>
+    </details>
+
+    <details>
+      <summary>Debt Validation / Verification Request to Collector (Sample)</summary>
+      <div class="card">
+        <textarea class="input" id="letter-validate">
+[Your Name]
+[Address]
+[City, State ZIP]
+[Email] | [Phone]
+[Date]
+
+[Collector Name]
+[Collector Address]
+
+Re: Request for validation/verification of alleged debt under the FDCPA
+
+Please provide (1) the name of the original creditor, (2) amount owed and itemization,
+(3) proof you have the right to collect, and (4) complete account documentation.
+Until you validate, please cease collection and credit reporting.
+
+Sincerely,
+[Your Name]
+        </textarea>
+        <div class="actions">
+          <button class="action" onclick="printArea('letter-validate')">🖨️ Print</button>
+        </div>
+      </div>
+    </details>
+
+    <details>
+      <summary>Identity Theft Report & Fraud Affidavit (Starter Form)</summary>
+      <div class="card">
+        <textarea class="input" id="letter-idtheft">
+IDENTITY THEFT AFFIDAVIT (Starter)
+Name: __________   DOB: __________   Phone: __________
+Address: ___________________________________________
+Incident Date: __/__/____   Police Report #: __________
+
+I declare that the following accounts/charges are not mine and stem from identity theft:
+• Bureau Reported Items:
+• Creditors/Collectors:
+
+I request placement/extension of fraud alert, blocking of fraudulent info, and copies of all records related to the fraudulent accounts.
+
+Signature: _____________________   Date: __/__/____
+        </textarea>
+        <div class="actions">
+          <button class="action" onclick="printArea('letter-idtheft')">🖨️ Print</button>
+        </div>
+      </div>
+    </details>
+
+    <details>
+      <summary>Goodwill / Pay-for-Delete Outreach (Template)</summary>
+      <div class="card">
+        <textarea class="input" id="letter-goodwill">
+[Your Name]
+[Address]
+[Date]
+
+[Creditor]
+Subject: Goodwill adjustment / Pay-for-Delete consideration
+
+I’m requesting a goodwill adjustment/pay-for-delete in connection with account [#].
+Given my current standing and resolution efforts, please consider removing or updating the negative mark as a goodwill gesture / in exchange for agreed settlement.
+
+Thank you for your consideration.
+Sincerely,
+[Your Name]
+        </textarea>
+        <div class="actions">
+          <button class="action" onclick="printArea('letter-goodwill')">🖨️ Print</button>
+        </div>
+      </div>
+    </details>
+  </section>
+
+  <!-- Customer Care -->
+  <section id="care" class="container">
+    <h2>Customer Care</h2>
+    <div class="grid grid-2">
+      <div class="card">
+        <h3>How We Communicate</h3>
+        <ul class="clean">
+          <li>Transparent updates at least every <strong>30 days</strong> (free)</li>
+          <li>Text &amp; email support <strong>24/7</strong> (free)</li>
+          <li>Direct inbox via the intake form below</li>
+          <li>Local appointments available</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>Who We Help</h3>
+        <div class="cols">
+          <ul class="clean">
+            <li>First-time credit builders</li>
+            <li>Families &amp; recent movers</li>
+            <li>Self-employed</li>
+          </ul>
+          <ul class="clean">
+            <li>Identity theft victims</li>
+            <li>Life-event rebuilders</li>
+            <li>Anyone needing a fresh start</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Intake / Contact Form -->
+  <section id="contact" class="container">
+    <h2>Contact & Intake</h2>
+    <div class="grid grid-2">
+      <div class="card">
+        <form id="intake" data-validate>
+          <div class="row row-2">
+            <div>
+              <label class="muted">Full Name</label>
+              <input class="input" required name="name" placeholder="Your name" />
+            </div>
+            <div>
+              <label class="muted">Email</label>
+              <input class="input" required type="email" name="email" placeholder="you@email.com" />
+            </div>
+            <div>
+              <label class="muted">Phone</label>
+              <input class="input" required name="phone" placeholder="(682) 888-9241" />
+            </div>
+            <div>
+              <label class="muted">Goal</label>
+              <input class="input" name="goal" placeholder="e.g., refinance, apartment approval, lower insurance" />
+            </div>
+          </div>
+          <div class="row">
+            <label class="muted">Tell us what's going on (in your own words)</label>
+            <textarea class="input" required name="story" placeholder="Explain your situation briefly…"></textarea>
+          </div>
+          <div class="actions" style="margin-top:10px">
+            <button class="btn" type="submit">Send Secure Message</button>
+            <a class="btn btn-outline" href="tel:16828889241">Call/Text 682-888-9241</a>
+            <a class="btn btn-outline" href="mailto:stateemployee6@gmail.com">Email stateemployee6@gmail.com</a>
+          </div>
+          <p class="fine">Visit: 8500 Harwood Rd, North Richland Hills, TX 76180</p>
+        </form>
+      </div>
+      <div class="card">
+        <h3>What’s Included (Free Downloads)</h3>
+        <ul class="clean">
+          <li>Welcome kit + portal access steps</li>
+          <li>Letter library indices</li>
+          <li>Progress tracking checklist</li>
+          <li>Debt validation/verification request guide</li>
+          <li>Collection settlement guidance overview</li>
+          <li>Mini course outline (paid full course: $69.99)</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Policies & Disclaimers -->
+  <section id="policies" class="container">
+    <h2>Policies & Disclaimers</h2>
+    <div class="card">
+      <ul class="clean">
+        <li><strong>Compliance:</strong> We follow CRA/CROA. No false promises. We cannot guarantee any specific deletion, change, or score result.</li>
+        <li><strong>Three-Day Right to Cancel:</strong> By law, you can cancel within 3 days and cannot be charged.</li>
+        <li><strong>Mid-Month Cancellation:</strong> If you cancel mid-month, you owe the full month and no letters are sent that period.</li>
+        <li><strong>Second-Round Disputes:</strong> Full payment required before round 2; otherwise all contracts pause.</li>
+        <li><strong>Payment Date:</strong> If you miss, the payment is due by the <strong>15th of next month</strong> (grace extension).</li>
+        <li><strong>Permanent Termination:</strong> Repeated non-payment may result in permanent account closure.</li>
+        <li><strong>Privacy:</strong> No judgment, strictly business. We don’t discuss your information outside necessary processing.</li>
+      </ul>
+      <div class="note fine"><strong>Reminder:</strong> Timelines depend on bureaus and furnishers. We advocate vigorously while staying fully compliant.</div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="container">
+    <div class="bar" style="gap:10px;flex-wrap:wrap">
+      <div>&copy; <span id="year"></span> Stayton Credit Solutions • Texas-Owned</div>
+      <div>
+        <a href="#top">Back to top</a> •
+        <a href="sitemap.xml">Sitemap</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating “Back to Top” -->
+  <button class="backtop" data-to-top aria-label="Back to top">↑</button>
+
+  <!-- Structured data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "Stayton Credit Solutions",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "8500 Harwood Rd",
+      "addressLocality": "North Richland Hills",
+      "addressRegion": "TX",
+      "postalCode": "76180"
+    },
+    "telephone": "+1-682-888-9241",
+    "email": "stateandcoryjoseph@gmail.com",
+    "url": "https://your-github-username.github.io/StaytonCreditSolutions/",
+    "areaServed": "US",
+    "founder": "Stayton Credit Solutions",
+    "priceRange": "$$"
+  }
+  </script>
+
+  <!-- App JS -->
+  <script>
+    // Theme toggle
+    document.querySelector('[data-theme-toggle]')?.addEventListener('click', () => {
+      const html = document.documentElement;
+      html.setAttribute('data-theme', html.getAttribute('data-theme') === 'dark' ? 'light' : 'dark');
+    });
+
+    // Back to top
+    document.querySelector('[data-to-top]')?.addEventListener('click', () => {
+      document.getElementById('top')?.scrollIntoView({behavior:'smooth'});
+    });
+
+    // Print helper for dropdown letters
+    function printArea(textareaId){
+      const el = document.getElementById(textareaId);
+      if(!el) return;
+      const w = window.open('', '_blank', 'width=800,height=900');
+      w.document.write('<pre style="font-family:ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;white-space:pre-wrap;line-height:1.35;padding:20px;">'
+        + escapeHtml(el.value) + '</pre>');
+      w.document.close();
+      w.focus();
+      w.print();
+      setTimeout(()=>w.close(), 500);
+    }
+    function escapeHtml(s){return s.replace(/[&<>"']/g, m=>({ '&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#039;' }[m]));}
+
+    // Intake form (mock send to email)
+    document.getElementById('intake')?.addEventListener('submit', (e)=>{
+      e.preventDefault();
+      const data = Object.fromEntries(new FormData(e.target).entries());
+      const mailto = 'mailto:stateemployee6@gmail.com'
+        + '?subject=' + encodeURIComponent('New Intake: ' + (data.name||'Client'))
+        + '&body=' + encodeURIComponent(
+`Name: ${data.name||''}
+Email: ${data.email||''}
+Phone: ${data.phone||''}
+Goal: ${data.goal||''}
+
+Story:
+${data.story||''}
+`);
+      window.location.href = mailto; // opens the user's email app prefilled
+      alert('Thanks! Your email draft just opened. Send it when you’re ready.');
+      e.target.reset();
+    });
+
+    // Download this page as index.html (BLUE BUTTON)
+    document.getElementById('downloadPage')?.addEventListener('click', ()=>{
+      const blob = new Blob(
+        ['<!DOCTYPE html>\n', document.documentElement.outerHTML],
+        {type:'text/html;charset=utf-8'}
+      );
+      const a = document.createElement('a');
+      a.href = URL.createObjectURL(blob);
+      a.download = 'index.html';
+      a.click();
+      URL.revokeObjectURL(a.href);
+    });
+
+    // Generate a simple Welcome Kit PDF (as .txt for broad compatibility); can be printed
+    document.getElementById('downloadWelcome')?.addEventListener('click', ()=>{
+      const text = `Stayton Credit Solutions — Welcome Kit
+Texas-Owned • CRA/CROA compliant • No false promises
+
+Portal Access:
+1) Create your portal login (we’ll email your link).
+2) Upload your ID and recent proof of address.
+3) Pull your 3-bureau report (instructions included).
+
+What we do:
+• Full audit (Experian, TransUnion, Equifax)
+• Dispute prep and tracking
+• Identity theft support (affidavit, alerts)
+• Score-building plans
+
+Policies (Summary):
+• 3-day right to cancel (no charge)
+• Mid-month cancel = you owe that month; no letters sent
+• Second-round disputes require full payment
+
+Contacts:
+Call/Text: 682-888-9241
+Email: stateandcoryjoseph@gmail.com / stateemployee6@gmail.com
+Address: 8500 Harwood Rd, North Richland Hills, TX 76180
+`;
+      const blob = new Blob([text], {type:'text/plain;charset=utf-8'});
+      const a = document.createElement('a');
+      a.href = URL.createObjectURL(blob);
+      a.download = 'Welcome_Kit.txt'; // universally openable; printable
+      a.click();
+      URL.revokeObjectURL(a.href);
+    });
+
+    // Auto year
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
