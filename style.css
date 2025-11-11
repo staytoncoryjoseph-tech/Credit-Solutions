@@ -1,0 +1,87 @@
+/* Core Styles — Stayton Credit Solutions */
+:root {
+  --navy: #0a1f44;
+  --gold: #d4af37;
+  --white: #ffffff;
+  --blue: #2563eb;
+  --text: #1f2937;
+  --muted: #6b7280;
+  --bg: #f8fafc;
+  --card: #ffffff;
+  --ring: rgba(37, 99, 235, .35);
+  --radius: 16px;
+}
+* { box-sizing: border-box; }
+html, body { margin:0; padding:0; color:var(--text); background:var(--bg); font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; line-height:1.6; }
+img { max-width: 100%; height:auto; display:block; }
+a { color: var(--blue); text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+.container { width:min(1120px, 92%); margin-inline:auto; }
+.grid-2 { display:grid; gap:1rem; grid-template-columns: repeat(2, minmax(0, 1fr)); }
+.grid-3 { display:grid; gap:1rem; grid-template-columns: repeat(3, minmax(0, 1fr)); }
+@media (max-width: 800px) {
+  .grid-2, .grid-3 { grid-template-columns: 1fr; }
+}
+
+.site-header { position: sticky; top:0; z-index:50; background:var(--white); border-bottom:1px solid #e5e7eb; backdrop-filter: blur(8px); }
+.header-inner { display:flex; align-items:center; justify-content:space-between; padding: .75rem 0; }
+.brand { display:flex; align-items:center; gap:.5rem; font-weight:700; color:var(--navy); }
+.brand-name { font-size:1.1rem; letter-spacing:.3px; }
+.nav-toggle { display:none; }
+.nav-list { list-style:none; display:flex; gap:1rem; margin:0; padding:0; align-items:center; }
+.nav-list a { padding:.5rem .75rem; border-radius:999px; }
+.btn { display:inline-block; padding:.75rem 1rem; border-radius:999px; font-weight:600; border:1px solid transparent; }
+.btn-gold { background:var(--gold); color:#111827; }
+.btn-blue { background:var(--blue); color:white; }
+.btn-outline { border-color:#cbd5e1; color:#111827; background:transparent; }
+.btn:hover { filter: brightness(0.98); }
+.link { text-decoration: underline; }
+.small { font-size:.9rem; color:var(--muted); }
+
+.hero { background: radial-gradient(1200px 500px at 20% -20%, #e0e7ff, transparent), var(--white); }
+.hero-inner { display:grid; gap:2rem; grid-template-columns: 1.2fr .8fr; padding: 3rem 0; }
+.hero-copy h1 { font-size: clamp(2rem, 2.2rem + 2vw, 3rem); color:var(--navy); margin:.25rem 0 1rem; }
+.trust-badges { display:flex; gap:.75rem; list-style:none; padding:0; margin-top:1rem; color:var(--muted); }
+.hero-card { border:1px solid #e5e7eb; border-radius: var(--radius); background:var(--card); padding:1rem; display:grid; gap:1rem; align-content:center; }
+.score { display:flex; align-items:baseline; gap:.5rem; }
+.score span { color:var(--muted); }
+.score strong { font-size:2rem; color:var(--navy); }
+
+.features { padding: 2.5rem 0; }
+.card { background:var(--card); border:1px solid #e5e7eb; border-radius:var(--radius); padding:1rem; box-shadow: 0 10px 20px -12px rgba(0,0,0,.08); }
+
+.testimonials { padding: 2.5rem 0; background:linear-gradient(180deg, #fff, #f1f5f9); }
+.quote { background:var(--card); border-left:4px solid var(--gold); padding:1rem; border-radius:var(--radius); }
+
+.cta-banner { background: var(--navy); color:white; }
+.banner-inner { display:flex; align-items:center; justify-content:space-between; padding: 1.75rem 0; }
+.banner-inner h2 { margin:0; }
+
+.page .container { padding:2rem 0; }
+.lead { color:var(--muted); }
+
+.price-card .price { font-size:1.75rem; color:var(--navy); margin:.25rem 0 1rem; }
+.price-card.featured { border:2px solid var(--gold); box-shadow: 0 16px 40px -20px rgba(212,175,55,.5); }
+
+.results-grid { display:grid; gap:1rem; grid-template-columns: repeat(3, minmax(0, 1fr)); }
+.result-card { background:var(--card); border:1px solid #e5e7eb; border-radius:var(--radius); overflow:hidden; }
+.result-card figcaption { padding:.75rem; color:var(--muted); }
+
+.doc-list { list-style: none; padding:0; display:grid; gap:.75rem; }
+.doc-list a { display:inline-block; padding:.6rem .9rem; border:1px solid #cbd5e1; border-radius: .75rem; }
+
+.site-footer { margin-top:3rem; background:#0f172a; color:#e2e8f0; }
+.site-footer h4 { color:white; margin-bottom:.25rem; }
+.footer-bottom { display:flex; align-items:center; justify-content:space-between; border-top:1px solid #334155; padding: .75rem 0; }
+.social a { color:#cbd5e1; margin-left:.75rem; }
+
+input, textarea { width:100%; padding:.7rem .85rem; border:1px solid #cbd5e1; border-radius:.75rem; background:white; }
+input:focus, textarea:focus { outline: none; box-shadow: 0 0 0 4px var(--ring); border-color: var(--blue); }
+
+@media (max-width: 900px) {
+  .nav-toggle { display:block; background:transparent; border:1px solid #e5e7eb; padding:.5rem .75rem; border-radius:.75rem; }
+  .nav-list { display:none; position:absolute; right:1rem; top:3.25rem; background:white; border:1px solid #e5e7eb; border-radius:1rem; padding:.5rem; }
+  .nav-list.open { display:flex; flex-direction:column; min-width:240px; }
+  .hero-inner { grid-template-columns: 1fr; }
+}

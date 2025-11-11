@@ -1,0 +1,15 @@
+{
+  "name": "Stayton Credit Solutions",
+  "short_name": "Stayton Credit",
+  "start_url": "/index.html",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#0a1f44",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "64x64",
+      "type": "image/svg+xml"
+    }
+  ]
+}
